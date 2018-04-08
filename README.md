@@ -60,9 +60,73 @@ Or you can simply use the CSS Framework in your generation of HTML files.
 
 
 
-# TLDR How
+# How
 
-* Bullet_points_of_how_this_was_done
+## App Builder
+
+* Using the concepts from the [Lightning App Builder module](https://trailhead.salesforce.com/en/modules/lightning_app_builder)
+  * We make Lightning Components simply using the [Box styles](https://lightningdesignsystem.com/utilities/box/#content)
+  * See the components for more on styles / height
+
+## Lightning Layout
+
+[Lightning Layout](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/aura_compref_lightning_layout.htm) takes much of the difficulty away of creating grids and alignment as it creates the necessary html (to leverage the Lightning Design System)
+
+Much of the layouts created by the App Builder can be recreated very quickly (and with more control) using Lightning Layout.
+
+## Visualforce
+
+You can buld a Visualforce App with Lightning Design System, and there is a [very nice Trailhead module to help](https://trailhead.salesforce.com/projects/workshop-lightning-design-system-visualforce).
+
+A very bare-bones Visualforce page does not need much to leverage Lightning Design System
+
+	<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+		<!-- Import the Design System style sheet -->
+		<apex:slds />
+		
+		<!-- everything inside the slds-scope is under LDS -->
+		<div class="slds-scope">
+			
+			<!-- spinner https://lightningdesignsystem.com/components/spinners/#content -->
+			<div role="status" class="slds-spinner slds-spinner_medium">
+				<span class="slds-assistive-text">Loading</span>
+				<div class="slds-spinner__dot-a"></div>
+				<div class="slds-spinner__dot-b"></div>
+			</div>
+			
+		</div>
+	</apex:page>
+	
+This uses the always updated Lightning Design System.
+But please note there are [other options](https://lightningdesignsystem.com/downloads/), such as a custom build or use of pre-processors using design tokens.
+
+**Please Note:**
+If you need to use svg icons, you will need to include the html / body tags, so the `xlink` namespaces are understood.
+
+	<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Salesforce Lightning Design System Trailhead Module</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Import the Design System style sheet here instead of body -->
+		<apex:slds />
+	</head>
+	<body>
+		...
+	</body>
+	</html>
+	</apex:page>
+
+## Detecting Form Factor
+
+We can detect the OS / whether mobile / desktop etc. using the [Lightning Component $Browser utility](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/expr_browser_value_provider.htm)
+
+In this case it is just a single line:
+
+	var device = $A.get("$Browser.formFactor");
+	alert("You are using a " + device);
+	//-- alerts: You are using a Desktop
 
 ---
 
