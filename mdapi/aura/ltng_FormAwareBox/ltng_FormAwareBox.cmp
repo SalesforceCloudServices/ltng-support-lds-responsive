@@ -1,0 +1,31 @@
+<!--
+/**
+ * Form aware component that behaves differently on phone
+ * vs a tablet or Desktop environment
+ **/
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global"
+>
+	<!-- attributes -->
+    <aura:attribute name="formFactor" type="String" />
+    <aura:attribute name="buttonLabel" type="String" />
+    <!-- handlers -->
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <!-- elements -->
+    <div class='slds-box slds-theme_default slds-align_absolute-center' style='height:75px'>
+    	<lightning:button variant="brand" label="{!v.buttonLabel}" onclick="{!c.handleClick}" />
+    </div>
+    <!--
+    <div class="c-container slds-box">
+    	<lightning:layout horizontalAlign="space" >
+        	<lightning:layoutItem flexibility="auto" padding="small">
+            	I am a Form aware Container: {!v.formFactor}
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="auto" padding="small">
+            	<lightning:button variant="brand" label="Click Me" onclick="{!c.handleClick}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+	-->
+</aura:component>

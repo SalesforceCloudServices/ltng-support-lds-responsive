@@ -1,63 +1,58 @@
-# INTERNAL NOTES
-
-Wait, what is this?
-
-This is meant to be a simple starting point for creating Lightning demo projects
-
-
-
-# Structure of the project
-
-* doc - documentation resources
-  * images - images for documentation
-* data - data used in demo
-  * queries - queries used in extracting data for demos
-  * trees - data trees used for demos
-* dx - salesforce dx project
-* mdapi - mdapi version of dx project
-
-# How do I use this?
-
-**1.** Fork the repository at [https://github.com/SalesforceCloudServices/ltng-support-demo-template](https://github.com/SalesforceCloudServices/ltng-support-demo-template) for your demo
-
-**2.** Clone the project locally
-
-**3.** Create your Salesforce DX project in the **DX** folder.
-
-
-# Quick Help:
-
-**How do I create a dx project?** <br />
-[sfdx force:project:create](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_project.htm#cli_reference_force_project)
-
-**How do I run a script after installation?** <br />
-[Create an Apex Class that implements InstallHandler](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/apex_post_install_script_create.htm)
-
-
-
-
-# DELETE EVERYTHING ABOVE WHEN READY
-
------
------
-------
-------
-------
-------
-------
-
-
 # Overview
 
-Overview_of_what_the_project_represents
+The Salesforce UI is built on the [Salesforce Design System](https://lightningdesignsystem.com/getting-started/) - a Responsive/Adaptive Framework.
+
+This can be used:
+
+* Lightning Experience / Salesforce 1
+  * Record Pages
+  * Standalone Pages
+  * Lightning Actions
+  * many others
+* Stand-alone Lightning Apps
+* Lightning Out Components
+* Lightning Components for Visualforce
+* External pages (like on Heroku)
+
+The foundation for all but the simplest pages and components is a layout grid of some kind. The Design System provides a dedicated component for this purpose imaginatively called the [Grid System](https://www.lightningdesignsystem.com/components/utilities/grid/). If you have used other CSS frameworks such as [Bootstrap](http://getbootstrap.com/), you will be familiar with the concept of a grid. If not, in very brief terms, a grid allows you to divide your page into rows and columns. You can then arrange your markup so that it is rendered in a particular row/column. Grids can be nested allowing for complex layouts.
+
+![Grid Image](doc/images/grid.png)
 
 **Please note: sample code (metadata api and dx formats) are available in the [mdapi](./mdapi) and [dx](./dx) folders above**
 
+**For More Information, please visit:**
+
+[Lightning Design System Trailhead](https://trailhead.salesforce.com/modules/lightning_design_system/)
+
+Or 
+
+[Lightning Design System homepage](https://lightningdesignsystem.com/getting-started/)
+
 # Demo
 
-![Gif Demo](doc/images/demo.gif)
+As Lightning Components are built with the Lightning Design System behind the sheets, this means that layouts have many more options of creation and layout.
 
-What_the_demo_demonstrates_and_why_we_care
+![App Builder](doc/images/appBuilder.gif)
+
+So we can resize, and adjust and the layout still works.
+
+![Example Page Desktop](doc/images/examplePageDesktop.gif)
+
+Or leverage tables in a form factor that still works regardless of device (ex: Phones / Tablets and Desktops)
+
+![Example Grid Phone transition](doc/images/responsiveGridDesktopPhone.gif)
+
+## Visualforce
+
+But this doesn't just work using the Lightning Experience / Salesforce 1.
+
+Lightning Out provides a means to use these Lightning Components within your Visualforce Pages.
+
+Or you can simply use the CSS Framework in your generation of HTML files.
+
+![Screenshot of Visualforce using CSS Framework](doc/images/responsiveVF.gif)
+
+
 
 # TLDR How
 
@@ -101,11 +96,4 @@ Thats it, you can now open the org, and find the 'ticket' object in the 'all tab
 
 # Bit more detail...
 
-More_detail_on_how_this_was_done
-
-## Component
-
-What_about_the_component
-
-	sample code
-	
+... TBD if needed

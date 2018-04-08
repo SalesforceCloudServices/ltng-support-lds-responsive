@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Example page in Visualforce using Lightning Design System.</description>
+    <label>Responsive Visualforce</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom59: Can</motif>
+    <page>ltng_ResponsiveVisualforce</page>
+</CustomTab>
