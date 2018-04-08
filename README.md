@@ -28,6 +28,12 @@ Or
 
 [Lightning Design System homepage](https://lightningdesignsystem.com/getting-started/)
 
+Please note that this can be a very large discussion based on the types of responsive technical debt.
+
+Such as creating Responsive Behavior (behavior that is different based on phone vs desktop for example)
+
+This can be determined through the [FormFactor api methods](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/expr_browser_value_provider.htm), but often should be limited as much as possible.
+
 # Demo
 
 As Lightning Components are built with the Lightning Design System behind the sheets, this means that layouts have many more options of creation and layout.
