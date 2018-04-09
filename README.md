@@ -38,15 +38,59 @@ This can be determined through the [FormFactor api methods](https://developer.sa
 
 As Lightning Components are built with the Lightning Design System behind the sheets, this means that layouts have many more options of creation and layout.
 
+![App Builder Add Components](doc/images/appBuilderAddComponents.gif)
+
+We can add components through a drag and drop interface within a responsive layout...
+
+.
+
+.
+
+.
+
+.
+
+We can prepare how the layout will behave on any FormFactor.
+
+![App Builder](doc/images/appBuilderResponsivePreview.gif)
+
+.
+
+.
+
+.
+
+.
+
+We can even have components decide their sizing.
+
 ![App Builder](doc/images/appBuilder.gif)
+
+.
+
+.
+
+.
+
+.
 
 So we can resize, and adjust and the layout still works.
 
 ![Example Page Desktop](doc/images/examplePageDesktop.gif)
 
+.
+
+.
+
+.
+
+.
+
 Or leverage tables in a form factor that still works regardless of device (ex: Phones / Tablets and Desktops)
 
 ![Example Grid Phone transition](doc/images/responsiveGridDesktopPhone.gif)
+
+.
 
 ## Visualforce
 
@@ -58,7 +102,9 @@ Or you can simply use the CSS Framework in your generation of HTML files.
 
 ![Screenshot of Visualforce using CSS Framework](doc/images/responsiveVF.gif)
 
+(In this case, we're using the different forms of [Tiles](https://www.lightningdesignsystem.com/components/tiles/), [Cards](https://www.lightningdesignsystem.com/components/cards/), and [PageHeaders](https://www.lightningdesignsystem.com/components/page-headers/) )
 
+[You can see the code for the page here](dx/force-app/main/default/pages/ltng_ResponsiveVisualforce.page)
 
 # How
 
