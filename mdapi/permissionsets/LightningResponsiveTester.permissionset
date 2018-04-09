@@ -8,7 +8,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Lightning Responsive Tester</label>
     <tabSettings>
-        <tab>Example_Responsive_Table</tab>
+        <tab>ltng_ExampleResponsiveTable</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
