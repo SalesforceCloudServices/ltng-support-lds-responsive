@@ -198,11 +198,7 @@ However, the Salesforce CLI can be used with any org and does not require Salesf
 
 **2.** Add the permission set to your user
 
-	sfdx force:user:permset:assign -n Ticket_Manager -u [[orgAlias]]
-	
-**3.** Upload the data
-
-	sfdx force:data:tree:import -f data/tree/Ticket__c.json -u [[orgAlias]]
+	sfdx force:user:permset:assign -n LightningResponsiveTester -u [[orgAlias]]
 	
 ...
 

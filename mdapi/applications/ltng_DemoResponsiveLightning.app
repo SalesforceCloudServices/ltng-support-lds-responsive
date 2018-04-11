@@ -11,7 +11,7 @@
     <label>Demo Responsive Lightning</label>
     <navType>Standard</navType>
     <tabs>ltng_ExampleResponsivePage</tabs>
-    <tabs>Example_Responsive_Table</tabs>
+    <tabs>ltng_ExampleResponsiveTable</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Demo_Responsive_Lightning_UtilityBar</utilityBar>
 </CustomApplication>
