@@ -194,7 +194,7 @@ However, the Salesforce CLI can be used with any org and does not require Salesf
 
 **1.** Run the following command:
 
-	sfdx force:mdapi:deploy -d mdapi -u [[orgAlias]] -w
+	sfdx force:source:push -u [[orgAlias]]
 
 **2.** Add the permission set to your user
 
