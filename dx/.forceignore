@@ -3,4 +3,7 @@
 #
 
 package.xml
-**/*.profile
+**.profile*
+
+**/Security.settings*
+**/Address.settings*
