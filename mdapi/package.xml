@@ -29,10 +29,6 @@
     <members>LightningResponsiveTester</members>
   </types>
   <types>
-    <name>Settings</name>
-    <members>Security</members>
-  </types>
-  <types>
     <name>CustomTab</name>
     <members>ltng_ExampleResponsivePage</members>
     <members>ltng_ExampleResponsiveTable</members>
