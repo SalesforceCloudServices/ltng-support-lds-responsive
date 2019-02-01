@@ -1,5 +1,11 @@
 # Overview
 
+Please see the [Installation](#install) section below for more on how to install on your Sandbox / Demo org.
+
+**Please note: sample code (metadata api and dx formats) are is also available in the [mdapi](./mdapi) and [dx](./dx) folders above**
+
+---
+
 The Salesforce UI is built on the [Salesforce Design System](https://lightningdesignsystem.com/getting-started/) - a Responsive/Adaptive Framework.
 
 This can be used:
@@ -106,7 +112,7 @@ Or you can simply use the CSS Framework in your generation of HTML files.
 
 [You can see the code for the page here](dx/force-app/main/default/pages/ltng_ResponsiveVisualforce.page)
 
-# How
+# How to Use
 
 ## App Builder
 
@@ -174,17 +180,30 @@ In this case it is just a single line:
 	alert("You are using a " + device);
 	//-- alerts: You are using a Desktop
 
----
+# Install
 
-# Demo code overview
+There are three methods available for you to install this demo, so you can play around with it:
 
-The metadata for this example can be found under the [mdapi](./mdapi) folder.
+(Please note, all are intended as demonstrations and are not intended for deployment to Production as is)
 
-The Salesforce CLI version of this code can be found under the [dx](./dx) folder.
+* [Install via URL](#install-via-url)
+* [Install Demo via Salesforce CLI](#install-via-salesforce-cli)
 
-This can also be installed using Unlocked Packages (previously known as Developer Controlled Packages) in sandboxes using this url:
+## Install via URL
 
-[url](url)
+This works very similar to an App Exchange install.
+
+Please login to an available sandbox and click the link below.
+[https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000003OjvjQAC](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000003OjvjQAC)
+
+(or simply navigate to `https://YOUR_SALESFORCE_INSTANCE/packaging/installPackage.apexp?p0=04t6A000003OjvjQAC` <br />
+if you are already logged in)
+
+It is recommended to install for Admins Only (but all options will work)
+
+##### Run the Demos
+
+Thats it. See the [How to Use](#how-to-use) section for how to use the app.
 
 ## Installing via the Salesforce CLI
 
